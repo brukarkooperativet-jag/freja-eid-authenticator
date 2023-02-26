@@ -18,5 +18,5 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'target/'
-    Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
+    Contents: '*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)/'
